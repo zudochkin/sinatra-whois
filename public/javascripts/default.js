@@ -5,7 +5,7 @@ $(function() {
 	alert('Что-то пошло не так (');
 	return;
       }
-
+      $('ul#info > *').remove();
       $.each(data.info, function(field, value) {
 	$('ul#info').append('<li><strong>' + field + '</strong> ' + value + '</li>')
       });
